@@ -1,0 +1,192 @@
+.systemsDiv {
+    width: 100%;
+    height: 100%;
+    /* background-color: lightgrey; 
+    border: 1px solid green;  */
+    
+    display: grid;
+
+    grid-template-columns: 45% 10% 15% 30%;
+    grid-template-rows:  100px 1fr;
+    /* grid-gap: 10%; */
+
+    grid-template-areas: 
+    "ship name name name "
+    "ship graph1 graph2 graph3"
+}
+
+.sysShip{
+    grid-area: ship;
+    /* background-color: red; */
+    position: relative;
+    text-align: center;
+
+    background-image: url("/images/moose-green.png");
+    background-origin: content-box;
+    background-size:137%;
+    background-position: center;
+    background-repeat: no-repeat;
+  
+    display: grid;
+
+    grid-template-columns: 24% 16.5% 9.5% 9.5% 16.5% 24%;
+    /* grid-template-rows:3fr; */
+    grid-template-rows:  10% 10% 12% 11% 11% 10% 14% 17% 5%;
+    /* grid-gap: 10%; */
+}
+
+.sysShip > div{
+    height: 100%;
+    width:100%;
+
+    display: flex;
+    align-items: center;
+    /* border: 2px red solid; */
+}
+
+.sysName{
+    grid-area: name;
+    /* background-color:blue; */
+    text-align: center;
+}
+
+.sysGraph1{
+    grid-area: graph1;
+    /* background-color: green; */
+    text-align: center;
+    height: 100%;
+    width: 100%;
+}
+
+.sysGraph2{
+    grid-area: graph2;
+    /* background-color: green; */
+    text-align: center;
+    height: 100%;
+    width: 100%;
+}
+
+.sysGraph3{
+    grid-area: graph3;
+    /* background-color: green; */
+    text-align: center;
+    height: 100%;
+    width: 100%;
+}
+
+
+.navComp1{
+    grid-area: 3/3/3/5;    
+    justify-content: center;
+}
+
+.radar1{
+    grid-area: 2/2/3/3;    
+    justify-content: flex-end;
+    padding-right:5px;
+}
+
+.scaner1{
+    grid-area: 2/5/3/6;    
+    justify-content: flex-start;
+    padding-left:5px;
+}
+
+.beacon1{
+    grid-area: 3/2/4/3;    
+    justify-content: flex-end;
+    padding-right:20px;
+}
+
+.radio1{
+    grid-area: 3/5/4/6;    
+    justify-content: flex-start;
+    padding-left:20px;
+}
+
+.light1{
+    grid-area: 4/3/4/5;    
+    justify-content: center;
+}
+
+.medLab1{
+    grid-area: 5/2/6/3;    
+    justify-content: center;
+}
+
+.door1{
+    grid-area: 5/3/6/5;    
+    justify-content: center;
+}
+
+.lifeSys1{
+    grid-area: 5/5/6/6;    
+    justify-content: center;
+}
+
+.fuel1{
+    grid-area: 6/3/7/5;    
+    justify-content: center;
+}
+
+.gun1{
+    grid-area: 6/1/7/2;    
+    justify-content: flex-end;
+    padding-right: 30px;
+}
+
+.shield1{
+    grid-area: 6/6/7/7;    
+    justify-content: flex-start;
+    padding-left: 30px;
+}
+
+.pow1{
+    grid-area: 7/2/8/4;    
+    justify-content: center;
+}
+
+.pow2{
+    grid-area: 7/4/8/6;    
+    justify-content: center;
+}
+
+.manJet1{
+    grid-area: 7/1/8/2;    
+    justify-content: center;
+}
+
+.manJet2{
+    grid-area: 8/2/9/3;    
+    justify-content: center;
+}
+
+.manJet3{
+    grid-area: 8/5/9/6;    
+    justify-content: center;
+}
+
+.manJet4{
+    grid-area: 7/6/8/7;    
+    justify-content: center;
+}
+
+.mainJet1{
+    grid-area: 8/3/9/5;    
+    justify-content: center;
+}
+
+.floatingDiv{
+
+    position:absolute;
+    width:100px;
+    height:100px;
+    
+    bottom: 30px;
+    right:30px;
+    background-color:blueviolet;
+}
+
+.tmp{
+    border: 2px solid red;  
+}

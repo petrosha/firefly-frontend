@@ -1,0 +1,19 @@
+.menuElement {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.menuElementText {
+    font-family: "orbitronregular";
+    font-weight: bolder;
+    font-size: 36px;
+    color: #2D1A0D;
+    margin: 0px;
+}
+
+.menuElementImage {
+    width: 120px;
+    height: 120px;
+}

@@ -1,0 +1,34 @@
+.mainDiv {
+  position: absolute;
+
+  background-color: blue;
+  width: 1920px;
+  height: 1080px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+
+  background-image: url("/images/screen-background.jpg");
+  background-origin: content-box;
+  background-repeat: no-repeat;
+}
+
+.menuDiv {
+  /* border: 2px red solid; */
+  width: 12.7%;
+  height: 90%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.gamesDiv {
+  /* border: 2px blue solid; */
+  width: 84.4%;
+  height: 90%;
+}
+

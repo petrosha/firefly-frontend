@@ -1,0 +1,39 @@
+.title{
+    margin:20px;
+    font-family: "orbitronregular";
+    font-weight: bolder;
+    font-size: 40px;
+}
+.mainDiv {
+    width: 1920px;
+    height: 1080px;
+    background-image: url("/images/menus-select-background.jpg");
+    background-origin: content-box;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.buttonsDiv {
+    width: 50%;
+    height: 100%;
+    border: 2px red solid;
+}
+
+.buttonGroup{
+    width:50%;
+}
+
+.button{
+    border: 3px solid white;
+}
+
+.buttonText{
+    font-family: "orbitronregular";
+    font-size: 20px;
+    margin-bottom: 0px;
+}
