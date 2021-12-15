@@ -7,7 +7,9 @@ import { useStore } from "../../store/root_store";
 
 import MenuMain from "../menu/menu"
 import GameSystems from "../games/systems/systems"
-
+import GamePilot from "../games/pilot/pilot"
+import GameSpace from "../games/space/space"
+import Sounds from "../sounds/sounds.js"
 
 const MainScreen = observer(() => {
     let store=useStore();
@@ -19,12 +21,17 @@ const MainScreen = observer(() => {
             break;
         case "news":
             gameToShow = <div class="gameTitleDiv"><p class="gameTitleText">News</p></div>
-            break;                 
+            break;        
+        case "pilot":
+            gameToShow = <GamePilot/>
+            break;
+        case "space":
+            gameToShow = <GameSpace/>
+            break;
         default:
             gameToShow = "";
             break;
     }
-
     
   return (
     <div className={styles.mainDiv}>
@@ -38,6 +45,7 @@ const MainScreen = observer(() => {
       <div className={styles.gamesDiv}> 
         {gameToShow}
       </div>
+      <Sounds/>
     </div>
   )
 })

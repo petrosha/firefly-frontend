@@ -41,7 +41,7 @@ const options = {
         labels:{
             style:textStyle
         },
-        max:30,
+        max:60,
         reversed:true
     },
     colors:["#fffdf8"],

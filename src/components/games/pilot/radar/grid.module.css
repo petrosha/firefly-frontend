@@ -1,0 +1,32 @@
+.gridRadius{
+    fill:none;
+    stroke-width:1;
+    stroke:white;
+    opacity: 0.5;
+}
+.gridCircle{
+    fill:none;
+    stroke-width:1;
+    stroke:white;
+    opacity: 0.5;
+}
+
+.gridInRing{
+    fill:none;
+    stroke-width:3;
+    stroke:white;
+    opacity: 0.75;
+}
+
+.gridOutRing{
+    fill:none;
+    stroke-width:7;
+    stroke:white;
+    opacity: 0.85;
+}
+
+.gridRingText{
+    fill:white;
+    opacity: 0.8;
+    font-family: Verdana;    
+}

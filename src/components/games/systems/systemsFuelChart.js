@@ -13,38 +13,40 @@ const textXAxisStyle = {
     fontFamily: 'Verdana, sans-serif'
 }
 
-const options = {
-    title: {
-        text: 'Топливо',
-        style: textStyle
-    },
-    chart:{
-        backgroundColor:'transparent',
-        type:"column",
-        // rotate: -90,
-        borderColor:'white',
-    },
-    legend:{enabled:false},
-    xAxis:{
-        labels:{
-            style: textStyle,
-        },
-	    categories: []
-    },
-    yAxis: 
-    {
-        labels:{
-            style:textStyle
-        },
-        max:1000,
-        title:{enabled:false}
-    },
-    colors:["#ffda15"],
-    series: []
-}
-
-const powerConsumptionChart= ({dataSet = [],dataNames=[]})=>{
+const powerConsumptionChart= ({dataSet = [],dataNames=[], maxFuelLevel=1000})=>{
     if(dataSet.length === 0) {console.log("CHART!"); return (<></>);}
+
+    const options = {
+        title: {
+            text: 'Топливо',
+            style: textStyle
+        },
+        chart:{
+            backgroundColor:'transparent',
+            type:"column",
+            // rotate: -90,
+            borderColor:'white',
+        },
+        legend:{enabled:false},
+        xAxis:{
+            labels:{
+                style: textStyle,
+            },
+            categories: []
+        },
+        yAxis: 
+        {
+            labels:{
+                style:textStyle
+            },
+            max: maxFuelLevel,
+            title:{enabled:false}
+        },
+        colors:["#ffda15"],
+        series: []
+    }
+
+
 
     options.xAxis.categories=[...dataNames];
     options.series[0]={data:dataSet};

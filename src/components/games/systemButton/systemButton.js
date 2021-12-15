@@ -16,6 +16,7 @@ const buttonImgList={
     radio: "./images/systems/Radio.png",
     beacon: "./images/systems/Transponder.png",
     gun: "./images/systems/Weapon.png",
+    supergun: "./images/systems/SuperWeapon.png",
     shield: "./images/systems/Shield.png",
 }
 

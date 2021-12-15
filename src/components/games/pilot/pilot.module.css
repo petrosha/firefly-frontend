@@ -1,0 +1,51 @@
+.App {
+  width:100%;
+  height:100%;
+  display: grid;
+  grid-template-columns: 5% 8% 54% 8% 25%;
+  grid-template-rows:  5% 5% 40% 45% 5%;
+  /* border: 2px blue solid; */
+}
+
+.messages{
+  grid-area: 1/2/2/5;    
+  /* background-color: blue; */
+}
+
+.programButtons{
+  grid-area: 5/2/6/5;    
+  /* background-color: orange; */
+}
+
+.radar{
+  grid-area: 2/3/5/4;    
+  background-color: darkgrey;
+  position:relative;
+}
+
+.timer{
+  grid-area: 2/1/5/2;    
+  /* border:2px solid green; */
+  /* background-color: cyan; */
+}
+
+.navigationButtons1{
+  grid-area: 2/2/5/3;    
+  /* background-color: red; */
+}
+
+.navigationButtons2{
+  grid-area: 2/4/5/5;    
+  /* background-color: red; */
+}
+
+.selectionButtons{
+  grid-area: 3/5/6/6;    
+  /* background-color: green; */
+}
+
+.gameName{
+  grid-area: 1/5/3/6;    
+  /* background-color: magenta; */
+}
+

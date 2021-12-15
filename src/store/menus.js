@@ -25,7 +25,8 @@ export default class {
     }
 
     get list(){
-      return this.selected;
+      console.log("Names: ", JSON.stringify(this.names));
+      return this.selected.filter(el=>!this.names.find(el1=>el1.name===el).hidden);
     }
 
     setData(menu){
@@ -40,8 +41,6 @@ export default class {
     
     setCurrent(current){
         this.current=current;
-    }
-  
-    
+    }  
 }
   

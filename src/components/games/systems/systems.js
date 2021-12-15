@@ -9,10 +9,6 @@ import { useStore } from "../../../store/root_store";
 import { observer } from "mobx-react-lite";
 import net from "../../../net/network";
 
-import Highcharts from 'highcharts'
-import HighchartsReact from 'highcharts-react-official'
-
-
 const GameSystems=observer( ()=>{
     let systems=useStore().systems;
     let userId=useStore().user.id;
@@ -47,7 +43,7 @@ const GameSystems=observer( ()=>{
             <div className="gameTitleDiv"><p className="gameTitleText">Системы корабля</p></div>
         </div>
         <div className={styles.sysGraph1}>
-            <FuelChart dataSet = {[systems.fuel]} dataNames={["Tonns"]}/>
+            <FuelChart dataSet = {[systems.fuel]} dataNames={["Tons"]} maxFuelLevel={systems.maxFuelLevel}/>
         </div>
         <div className={styles.sysGraph2}>
             <PowerProductionChart 

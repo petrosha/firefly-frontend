@@ -1,0 +1,11 @@
+.pathesAll {
+  stroke:mediumorchid;
+  stroke-width: 5;
+  fill:none;
+}
+
+.dot {
+  stroke:none;
+  stroke-width: 0;
+  fill:rgb(147, 209, 224);
+}

@@ -1,0 +1,95 @@
+.spaceDivSmall {
+    position: relative;
+    border-radius: 50px;
+}
+
+.spaceDivBig {
+    position: absolute;
+    top:0px;
+    left:0px;
+    z-index: 1;
+    padding-bottom: 50px;
+}
+
+.spaceDivCommon{    
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+
+    background-origin: border-box;
+    background-size:auto;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.spaceButton{
+    position:absolute;
+    width: 50px;
+    height: 50px;
+    left:10px;
+    bottom:10px;
+    border-radius: 25px;
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+.spaceMessageDiv{
+    display: flex;
+    flex-direction: row-reverse;
+    position:absolute;
+    padding-left:50px;
+    padding-right:20px;
+    right:15%;
+    top:15%;
+
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    
+    background-color:rgba(255,255,255,0.2);
+}
+
+.spaceMessageText {
+    font-family: "Verdana";
+    font-weight: bold;
+    font-size: 32px;
+  
+    /* border-bottom: 3px white solid; */
+    color: white;
+    margin: 0px;
+
+  }
+  
+
+.sysGraph2{
+    grid-area: graph2;
+    /* background-color: green; */
+    text-align: center;
+    height: 100%;
+    width: 100%;
+}
+
+.ortDiv {
+    position: relative;
+    width: 18%;
+    height: 15%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.ortText {
+    font-family: "Verdana";
+    font-weight: bold;
+    font-size: 20px;
+  
+    /* border-bottom: 3px white solid; */
+    color: lightblue;
+    margin: 0px;
+}
+  

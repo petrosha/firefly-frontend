@@ -3,10 +3,12 @@ import { makeObservable, observable, action, computed } from "mobx";
 export default class {
     timeStamp=0;
     data = [];
+    maxFuelLevel=1000;
 
     constructor(rootStore) {
       makeObservable(this, {
         data: observable, //все пришедшие с сервера
+        maxFuelLevel:observable,
         listNames: computed,
         list: computed,
         listPowers: computed,
@@ -56,6 +58,7 @@ export default class {
     setData(systems){
         if(systems.timeStamp>this.timeStamp){
             this.data=[...systems.data];
+            this.maxFuelLevel = systems.maxFuelLevel;
             this.timeStamp=systems.timeStamp;
             // console.log("Systems: ", this.data.map((el)=>el.name));
           }

@@ -1,0 +1,149 @@
+.mainDiv{
+    width:100%;
+    height:100%;
+
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    overflow-y:auto;
+
+    font-family: "verdana";
+}
+
+.titleDiv{
+    width:90%;
+    height:60px;
+    display:flex;
+    justify-content: flex-end;
+    border-bottom: 2px solid white;
+}
+
+.titleText{
+    color:white;
+    opacity:0.85;
+
+    font-weight: bold;
+    font-style: italic;
+    font-size: 30px;
+
+    padding-bottom: 0px;
+}
+
+.cardDiv{
+    color:white;
+    opacity:0.85;
+
+    width:90%;
+    height: 120px;
+
+    border: 3px solid rgba(255,255,255,0.85);
+    margin-top:5px;
+    margin-bottom: 5px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+
+    display: grid;
+    grid-template-columns: 30% 20% 25% 25%;
+    grid-template-rows:  30% 30% 40%;
+}
+
+.cardDivBack{
+    background-color: rgba(255,255,255,0.3);
+}
+
+.cardTitle{
+    grid-area: 1/2/2/5;    
+    /* background-color: blue; */
+    display:flex;
+    justify-content: flex-end;
+    align-content: center;
+
+    padding-right:10px;
+
+    font-weight: bold;
+    font-size: 20px;
+
+}
+
+.titleComment{
+    display:flex;
+    justify-content: flex-end;
+    align-content: center;
+
+    color:rgba(255,255,255,0.75);
+    font-family: verdana;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 20px;
+    margin:0px;
+    padding:0px;
+}
+
+.systemTitleDiv{
+    width:90%;
+    height:100px;
+    display:flex;
+    flex-direction: column;
+    align-items:flex-end;
+    justify-content: flex-start;
+    border-bottom: 2px solid white;
+}
+
+.cardType{
+    grid-area: 2/2/3/5;    
+    /* background-color: green; */
+
+    display:flex;
+    justify-content: flex-end;
+    align-content: center;
+
+    padding-right:10px;
+
+    font-style:italic;
+    font-size: 20px;
+}
+
+.cardFuel{
+    grid-area: 3/1/4/2;    
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    font-family: "orbitronregular";
+    font-size: 20px; 
+    padding-left:20px;
+    border-top: 2px solid rgba(255,255,255,0.75);
+}
+
+.cardCoords{
+    grid-area: 3/2/4/5;        
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    font-family: "orbitronregular";
+    font-size: 20px; 
+    border-top: 2px solid rgba(255,255,255,0.75);
+}
+
+.cardDist{
+    grid-area: 3/2/4/4;        
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    font-family: "orbitronregular";
+    font-size: 20px; 
+    border-top: 2px solid rgba(255,255,255,0.75);
+}
+
+.cardSpeed{
+    grid-area: 3/4/4/5;        
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    font-family: "orbitronregular";
+    font-size: 20px; 
+    border-top: 2px solid rgba(255,255,255,0.75);
+}
+
+
+  
